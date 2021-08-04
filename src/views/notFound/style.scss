@@ -1,0 +1,27 @@
+.not-found {
+  position: relative;
+  background-color: $colorWhite;
+
+  .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  img {
+    position: relative;
+    width: 218px;
+    height: auto;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .dec {
+    padding: 15px 0;
+    font-size: 14px;
+    color: $color9;
+  }
+}

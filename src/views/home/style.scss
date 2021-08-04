@@ -1,0 +1,9 @@
+.page-content {
+  background: $bgColor;
+  color: $colorRed;
+
+  h1 {
+    position: relative;
+    @include hairline(bottom, $colorRed);
+  }
+}
