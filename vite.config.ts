@@ -3,6 +3,7 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path';
 
 export default defineConfig({
+  // 路径简写
   resolve: {
     alias: [
       { find: '@views', replacement: resolve(__dirname, 'src/views') },
@@ -16,7 +17,9 @@ export default defineConfig({
   css:{
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "src/assets/scss/mixin.scss"; @import "src/assets/scss/variable.scss";`
+        additionalData: `
+          @import "src/assets/scss/mixin.scss";
+          @import "src/assets/scss/variable.scss";`
       }
     }
   },

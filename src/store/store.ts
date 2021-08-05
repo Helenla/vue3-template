@@ -10,7 +10,6 @@ export default createStore({
   mutations,
   getters,
   actions,
-  modules: {},
   plugins: [
     createPersistedState({
       reducer(val) {
