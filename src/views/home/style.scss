@@ -6,4 +6,10 @@
     position: relative;
     @include hairline(bottom, $colorRed);
   }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: $colorGreen;
+  }
 }

@@ -1,6 +1,7 @@
 <template>
   <section class="page page-content">
     <h1>首页</h1>
+    <div class="box">box</div>
   </section>
 </template>
 
