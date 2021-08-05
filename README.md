@@ -32,4 +32,10 @@ Run `yarn` to install modules
 
 Run `yarn serve` to start
 
-Run `yarn build` to Build
+Run `yarn build` to Build 本地+测试环境
+
+Run `yarn build:pre` to Build 预发环境
+
+Run `yarn build:prod` to Build 生产环境
+
+Run `yarn build:vis` to Build 打包分析
