@@ -3,6 +3,7 @@ import App from './App.vue'
 import store from './store/store'
 import router from './router/router.interceptor'
 import SetVantPlugins from './plugins/vant' // vant按需引入
+import vconsole from 'vconsole'
 import './assets/scss/main.scss' // 全局样式
 
 // window属性接口定义
@@ -11,6 +12,10 @@ declare global {
     vm: ComponentPublicInstance,
     LOCAL_CONFIG: any
   }
+}
+
+if (window.LOCAL_CONFIG.IS_OPEN_VCONSOLE) {
+  new vconsole()
 }
 
 const app = createApp(App)

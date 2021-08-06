@@ -20,9 +20,7 @@ export default defineComponent({
 
     return { count }
   },
-  created() {
-    console.log(import.meta.env);
-  },
+  created() {},
 })
 </script>
 

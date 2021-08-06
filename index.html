@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
     <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
+    <noscript>
+      <strong>很抱歉，如果没有启用JavaScript，此项目将无法正常运行。请启用它。</strong>
+    </noscript>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
+    <script>
+      document.write(unescape("%3Cscript src='./config.local.js?_t="+ Math.random() +"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
   </body>
 </html>

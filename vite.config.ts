@@ -6,7 +6,11 @@ import visualizer from "rollup-plugin-visualizer"
 export default ({ mode }) => {
   const plugins = [vue()];
 
-  // 打包分析
+  /**
+   * 打包分析
+   * 在vite.config中不能使用 import.meta.env
+   * 但是用 loadEnv(mode, process.cwd()) 可获取 env 中的数据
+   */
   if (loadEnv(mode, process.cwd()).VITE_VIS) {
     plugins.push(
       visualizer({
