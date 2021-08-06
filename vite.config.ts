@@ -18,6 +18,12 @@ export default ({ mode }) => {
   }
 
   return defineConfig({
+    server: {
+      host: '0.0.0.0',
+      port: 8080,
+      open: '/'
+    },
+
     // 路径简写
     resolve: {
       alias: [
@@ -40,6 +46,6 @@ export default ({ mode }) => {
     },
   
     // 插件
-    plugins,
-  })  
+    plugins
+  })
 }
