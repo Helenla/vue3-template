@@ -1,15 +1,13 @@
-.page-content {
+.page {
   background: $bgColor;
-  color: $colorRed;
+  color: $colorWhite;
+}
 
-  h1 {
-    position: relative;
-    @include hairline(bottom, $colorRed);
-  }
-
-  .box {
-    width: 100px;
-    height: 100px;
-    background-color: $colorGreen;
-  }
+.header {
+  position: relative;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $colorRed;
 }

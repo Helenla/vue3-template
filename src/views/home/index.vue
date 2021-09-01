@@ -1,26 +1,39 @@
 <template>
-  <section class="page page-content">
-    <h1>首页</h1>
-    <div class="box">box</div>
+  <section class="page">
+    <header class="header">首页</header>
+    <section class="page-content">
+      <van-cell center title="黑夜模式">
+        <template #right-icon>
+          <van-switch v-model="checked" size="24" />
+        </template>
+      </van-cell>
+      <van-cell center title="黑夜模式" />
+    </section>
   </section>
 </template>
 
 <script lang="ts">
-import { ref, defineComponent, onMounted } from 'vue'
-import { Toast } from 'vant'
+import { ref, defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'HelloWorld',
+  name: 'Home',
   setup: () => {
     const count = ref(9999)
+    const checked = ref(false)
 
-    onMounted(() => {
-      Toast({message: count.value})
-    })
-
-    return { count }
+    return {
+      count,
+      checked
+    }
   },
-  created() {},
+  created() {
+    console.log(this.checked)
+  },
+  watch: {
+    checked(val) {
+      
+    }
+  }
 })
 </script>
 
