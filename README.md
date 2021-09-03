@@ -1,5 +1,7 @@
 # Vue 3 + Typescript + Vite
 
+### [文档地址](https://juejin.cn/post/6992834401424015391)
+
 This template should help get you started developing with Vue 3 and Typescript in Vite.
 
 ## Recommended IDE Setup
