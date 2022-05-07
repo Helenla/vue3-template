@@ -870,6 +870,13 @@ postcss-modules@^4.0.0:
     postcss-modules-values "^4.0.0"
     string-hash "^1.1.1"
 
+postcss-px-to-viewport-8-plugin@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.npmmirror.com/postcss-px-to-viewport-8-plugin/-/postcss-px-to-viewport-8-plugin-1.1.3.tgz#08d54d5b89814d59991ff65cc727d95611a930e8"
+  integrity sha512-3ZRiKjwEivm7rKhQmJKwrjsmFKnVSqQxAY6TsOhEhllNcMKjVoMUn1sNO54JQ278ghPdlVqlJPVcFPoVFPCY7Q==
+  dependencies:
+    object-assign "^4.1.1"
+
 postcss-px-to-viewport@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npm.taobao.org/postcss-px-to-viewport/download/postcss-px-to-viewport-1.1.1.tgz#a25ca410b553c9892cc8b525cc710da47bf1aa55"
