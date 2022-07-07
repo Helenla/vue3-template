@@ -8,33 +8,19 @@
         </template>
       </van-cell>
       <van-cell center title="黑夜模式" />
+      <Cat />
     </section>
+
   </section>
 </template>
 
-<script lang="ts">
-import { ref, defineComponent } from 'vue'
+<script setup lang="ts">
+import Cat from "../../assets/svg/cat.svg"
+import { ref } from 'vue'
 
-export default defineComponent({
-  name: 'Home',
-  setup: () => {
-    const count = ref(9999)
-    const checked = ref(false)
+const count = ref(9999)
+const checked = ref(false)
 
-    return {
-      count,
-      checked
-    }
-  },
-  created() {
-    console.log(this.checked)
-  },
-  watch: {
-    checked(val) {
-      
-    }
-  }
-})
 </script>
 
 <style lang="scss" scoped>

@@ -2,9 +2,10 @@ import vue from '@vitejs/plugin-vue'
 import { defineConfig, loadEnv } from 'vite'
 import { resolve } from 'path'
 import visualizer from "rollup-plugin-visualizer"
+import svgLoader from 'vite-svg-loader'
 
 export default ({ mode }) => {
-  const plugins = [vue()];
+  const plugins = [vue(), svgLoader()];
 
   /**
    * 打包分析
@@ -31,6 +32,7 @@ export default ({ mode }) => {
     // 路径简写
     resolve: {
       alias: [
+        { find: '@', replacement: resolve(__dirname, 'src') },
         { find: '@views', replacement: resolve(__dirname, 'src/views') },
         { find: '@services', replacement: resolve(__dirname, 'src/services') },
         { find: '@images', replacement: resolve(__dirname, 'src/assets/img') },
